@@ -1,0 +1,40 @@
+{
+  "name": "my-ui",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A Vue 3 component library similar to Naive UI",
+  "scripts": {
+    "dev": "pnpm --filter @my-ui/docs dev",
+    "dev:docs": "cd docs && pnpm dev",
+    "docs": "node start-docs.js",
+    "build": "pnpm --filter @my-ui/* build",
+    "build:docs": "pnpm --filter @my-ui/docs build",
+    "test": "pnpm --filter @my-ui/* test",
+    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx --fix",
+    "format": "prettier --write \"**/*.{vue,js,ts,jsx,tsx,json,md}\""
+  },
+  "keywords": [
+    "vue",
+    "vue3",
+    "component",
+    "ui",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0",
+    "pnpm": ">=7.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "@typescript-eslint/eslint-plugin": "^5.42.1",
+    "@typescript-eslint/parser": "^5.42.1",
+    "eslint": "^8.27.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.7.0",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.4"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "@my-ui/button",
+  "version": "0.1.0",
+  "description": "Button component for My UI",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "vue",
+    "vue3",
+    "component",
+    "button",
+    "ui",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "vue": "^3.3.0"
+  },
+  "dependencies": {
+    "@my-ui/theme": "workspace:*",
+    "@my-ui/utils": "workspace:*"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "vite": "^4.4.0",
+    "vite-plugin-dts": "^3.0.3",
+    "vitest": "^0.33.0",
+    "vue": "^3.3.4"
+  }
+}

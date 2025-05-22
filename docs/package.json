@@ -1,0 +1,34 @@
+{
+  "name": "@my-ui/docs",
+  "version": "0.1.0",
+  "description": "Documentation for My UI",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev .",
+    "build": "vitepress build .",
+    "preview": "vitepress preview ."
+  },
+  "keywords": [
+    "vue",
+    "vue3",
+    "component",
+    "ui",
+    "docs",
+    "vitepress"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@monaco-editor/loader": "^1.5.0",
+    "@my-ui/core": "workspace:*",
+    "@my-ui/theme": "workspace:*",
+    "monaco-editor": "^0.52.2"
+  },
+  "devDependencies": {
+    "markdown-it-container": "^4.0.0",
+    "vitepress": "^1.0.0-rc.4",
+    "vitepress-theme-demoblock": "^3.1.3",
+    "vue": "^3.3.4"
+  }
+}

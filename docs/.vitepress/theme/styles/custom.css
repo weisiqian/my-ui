@@ -1,0 +1,97 @@
+/**
+ * 自定义样式
+ * 用于覆盖 VitePress 默认样式或添加自定义样式
+ */
+
+/* 全局样式 */
+:root {
+  --primary-color: #18a058;
+  --primary-color-hover: #36ad6a;
+  --primary-color-pressed: #0c7a43;
+  --primary-color-rgb: 24, 160, 88;
+  --info-color: #2080f0;
+  --info-color-rgb: 32, 128, 240;
+  --success-color: #18a058;
+  --success-color-rgb: 24, 160, 88;
+  --warning-color: #f0a020;
+  --warning-color-rgb: 240, 160, 32;
+  --error-color: #d03050;
+  --error-color-rgb: 208, 48, 80;
+  --text-color: #333639;
+  --text-color-rgb: 51, 54, 57;
+  --text-color-disabled: #c0c4cc;
+  --border-color: #d9d9d9;
+  --border-radius: 3px;
+  --font-size: 14px;
+  --background-color: #ffffff;
+}
+
+/* 暗色主题 */
+.dark {
+  --primary-color: #63e2b7;
+  --primary-color-rgb: 99, 226, 183;
+  --primary-color-hover: #7fe7c4;
+  --primary-color-pressed: #5acea7;
+  --info-color: #70c0e8;
+  --info-color-rgb: 112, 192, 232;
+  --success-color: #63e2b7;
+  --success-color-rgb: 99, 226, 183;
+  --warning-color: #f2c97d;
+  --warning-color-rgb: 242, 201, 125;
+  --error-color: #e88080;
+  --error-color-rgb: 232, 128, 128;
+  --text-color: #ffffff;
+  --text-color-rgb: 255, 255, 255;
+  --text-color-disabled: #686b6e;
+  --border-color: #4c4d4f;
+  --border-radius: 3px;
+  --font-size: 14px;
+  --background-color: #1f1f1f;
+}
+
+/* 代码块样式 */
+.vp-doc div[class*='language-'] {
+  border-radius: 6px;
+}
+
+/* 表格样式 */
+.vp-doc table {
+  width: 100%;
+  display: table;
+  border-collapse: collapse;
+}
+
+.vp-doc tr {
+  border-top: 1px solid var(--border-color);
+}
+
+.vp-doc tr:nth-child(2n) {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.vp-doc th,
+.vp-doc td {
+  border: 1px solid var(--border-color);
+  padding: 10px 16px;
+}
+
+.vp-doc th {
+  background-color: rgba(0, 0, 0, 0.04);
+  font-weight: 500;
+}
+
+/* 自定义容器样式 */
+.custom-block {
+  border-radius: 6px;
+}
+
+/* 页面过渡动画 */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
