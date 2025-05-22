@@ -55,7 +55,7 @@ pnpm add @my-ui/ui
 1. 克隆仓库
 
 ```bash
-git clone https://github.com/yourusername/my-ui.git
+git clone https://github.com/weisiqian/my-ui.git
 ```
 
 2. 安装依赖

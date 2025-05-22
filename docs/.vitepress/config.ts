@@ -20,7 +20,7 @@ export default defineConfig({
       { text: '组件', link: '/components/' },
       { text: '主题', link: '/theme/' },
       { text: 'Playground', link: '/playground' },
-      { text: 'GitHub', link: 'https://github.com/yourusername/my-ui' }
+      { text: 'GitHub', link: 'https://github.com/weisiqian/my-ui' }
     ],
     sidebar: {
       '/guide/': [
@@ -64,7 +64,7 @@ export default defineConfig({
         }
       ]
     },
-    socialLinks: [{ icon: 'github', link: 'https://github.com/yourusername/my-ui' }],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/weisiqian/my-ui' }],
     footer: {
       message: 'Released under the MIT License.',
       copyright: 'Copyright © 2023-present'

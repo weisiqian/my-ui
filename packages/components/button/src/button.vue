@@ -41,7 +41,7 @@ import { ButtonProps, ButtonEmits } from './types'
 
 export default defineComponent({
   name: 'UButton',
-  
+
   props: {
     type: {
       type: String,
@@ -109,32 +109,32 @@ export default defineComponent({
       }
     }
   },
-  
+
   emits: ['click'],
-  
+
   setup(props: ButtonProps, { emit }) {
     const { mergedTheme } = useTheme()
-    
+
     // 计算按钮样式
     const buttonStyle = computed(() => {
       const theme = mergedTheme.value
       const style: Record<string, string> = {}
-      
+
       // 自定义颜色
       if (props.color) {
         style['--button-bg-color'] = props.color
         style['--button-border-color'] = props.color
-        
+
         if (!props.textColor) {
           style['--button-text-color'] = '#fff'
         }
       }
-      
+
       // 自定义文本颜色
       if (props.textColor) {
         style['--button-text-color'] = props.textColor
       }
-      
+
       // 应用主题
       if (props.type === 'default') {
         style['--button-text-color'] = theme.Button.textColor
@@ -160,7 +160,7 @@ export default defineComponent({
         style['--button-text-color'] = theme.Button.textColorError
         style['--button-border'] = theme.Button.borderError
       }
-      
+
       // 应用尺寸
       if (props.size === 'small') {
         style['--button-height'] = theme.Button.heightSmall
@@ -175,23 +175,29 @@ export default defineComponent({
         style['--button-padding'] = theme.Button.paddingLarge
         style['--button-font-size'] = theme.Button.fontSizeLarge
       }
-      
+
       // 应用圆角
-      style['--button-border-radius'] = props.round 
-        ? '9999px' 
-        : props.circle 
-          ? '50%' 
+      style['--button-border-radius'] = props.round
+        ? '9999px'
+        : props.circle
+          ? '50%'
           : theme.Button.borderRadius
-      
+
+      // 应用字重
+      style['--button-font-weight'] = theme.Button.fontWeight
+
+      // 应用过渡效果
+      style['--button-transition'] = 'all 0.2s ease-in-out'
+
       return style
     })
-    
+
     // 点击事件处理
     const handleClick = (event: MouseEvent) => {
       if (props.disabled || props.loading) return
       emit('click', event)
     }
-    
+
     return {
       buttonStyle,
       handleClick
@@ -216,7 +222,8 @@ export default defineComponent({
   user-select: none;
   vertical-align: middle;
   -webkit-appearance: none;
-  
+  appearance: none;
+
   height: var(--button-height);
   padding: var(--button-padding);
   font-size: var(--button-font-size);

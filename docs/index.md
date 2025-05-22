@@ -14,7 +14,7 @@ hero:
       link: /components/
     - theme: alt
       text: 在 GitHub 上查看
-      link: https://github.com/yourusername/my-ui
+      link: https://github.com/weisiqian/my-ui
 
 features:
   - icon: 🛠️

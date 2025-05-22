@@ -92,4 +92,4 @@ My UI 支持所有现代浏览器，包括：
 
 ## 许可证
 
-[MIT](https://github.com/yourusername/my-ui/blob/main/LICENSE)
+[MIT](https://github.com/weisiqian/my-ui/blob/main/LICENSE)
